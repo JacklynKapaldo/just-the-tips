@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just The Tips Nail Co.</title>
+    
+    <!-- Google Fonts: Playfair Display for headings, Lora for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Cottagecore Color Palette */
+        :root {
+            --canvas-cream: #F4F1EA;
+            --bark-brown: #3E362E;
+            --sage-green: #8A9A86;
+            --foraged-mushroom: #D1C7B8;
+        }
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--canvas-cream);
+            color: var(--bark-brown);
+            font-family: 'Lora', serif; /* Soft, readable serif for body */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Elegant, earthy headings */
+            font-weight: 600;
+            color: var(--bark-brown);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: var(--foraged-mushroom);
+            border-bottom: 2px solid var(--sage-green);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--bark-brown);
+            opacity: 0.8;
+        }
+
+        .floral-accent {
+            font-size: 1.5rem;
+            color: var(--sage-green);
+            margin: 1rem 0;
+            letter-spacing: 10px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Services Cards */
+        .services {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .service-card {
+            background-color: #FDFBF7; /* Slightly lighter than canvas cream for contrast */
+            border: 1px solid var(--foraged-mushroom);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(62, 54, 46, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: var(--sage-green);
+            font-size: 1.5rem;
+        }
+
+        /* Call to Action Button */
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .btn {
+            background-color: var(--sage-green);
+            color: var(--canvas-cream);
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(62, 54, 46, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #6d7b69; /* Darker sage */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--foraged-mushroom);
+            margin-top: 2rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Just The Tips Nail Co.</h1>
+        <div class="hero-subtitle">Independent nail artistry in Morgantown, WV</div>
+        <div class="floral-accent">🌿 🍄 🌿</div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to your cozy nail retreat.</h2>
+            <p>Specializing in structured gel manicures, natural nail health, and intricate, nature-inspired art. Kick back, relax, and let's create something beautiful together.</p>
+        </section>
+
+        <section class="services">
+            <div class="service-card">
+                <h3>Structured Gel Manicure</h3>
+                <p>Our signature service. A hard gel overlay that provides strength and durability to your natural nails, finished with your choice of solid color or subtle botanical art.</p>
+            </div>
+            <div class="service-card">
+                <h3>Foraged Spa Pedicure</h3>
+                <p>A relaxing soak featuring dried herbs and essential oils, complete with cuticle care, exfoliation, and a perfect gel polish finish.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <a href="#book" class="btn">Book an Appointment</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Just The Tips Nail Co. | Morgantown, WV</p>
+    </footer>
+</body>
+</html>
