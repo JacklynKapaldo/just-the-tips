@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         /* Cottagecore Color Palette */
         :root {
@@ -101,11 +104,13 @@
         /* Link Buttons */
         .link-btn {
             width: 100%;
-            padding: 1.2rem;
+            padding: 1.2rem 4rem; /* Extra side padding to make room for the icon */
             background-color: var(--soft-white);
             color: var(--bark-brown);
             text-decoration: none;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Keeps text centered */
             border: 1px solid var(--foraged-mushroom);
             border-radius: 12px;
             font-family: 'Playfair Display', serif;
@@ -114,7 +119,23 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(62, 54, 46, 0.04);
             box-sizing: border-box;
-            position: relative;
+            position: relative; /* Allows the icon to be positioned inside */
+        }
+
+        .icon-circle {
+            position: absolute;
+            left: 0.8rem; /* Keeps the circle pinned to the left */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--canvas-cream);
+            color: var(--bark-brown);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--foraged-mushroom);
         }
 
         .link-btn:hover, .link-btn:active {
@@ -125,6 +146,12 @@
             box-shadow: 0 6px 12px rgba(62, 54, 46, 0.1);
         }
 
+        .link-btn:hover .icon-circle, .link-btn:active .icon-circle {
+            background-color: var(--soft-white);
+            color: var(--sage-green);
+            border-color: var(--soft-white);
+        }
+
         /* Highlighted primary button */
         .link-btn.featured {
             background-color: var(--sage-green);
@@ -132,9 +159,19 @@
             border-color: var(--sage-green);
         }
 
+        .link-btn.featured .icon-circle {
+            background-color: var(--soft-white);
+            color: var(--sage-green);
+            border-color: var(--soft-white);
+        }
+
         .link-btn.featured:hover, .link-btn.featured:active {
             background-color: #6d7b69; 
             border-color: #6d7b69;
+        }
+
+        .link-btn.featured:hover .icon-circle, .link-btn.featured:active .icon-circle {
+            color: #6d7b69;
         }
 
         /* Small Footer */
@@ -158,15 +195,33 @@
 
         <!-- The main booking/featured link -->
         <div class="featured-wrapper">
-            <a href="https://home.shortcutssoftware.com/morgantownbeautycollege#/_h/sites/32483/details?servicesId=367" class="link-btn featured" target="_blank">Book an Appointment</a>
+            <a href="https://home.shortcutssoftware.com/morgantownbeautycollege#/_h/sites/32483/details?servicesId=367" class="link-btn featured" target="_blank">
+                <div class="icon-circle"><i class="fa-regular fa-calendar-check"></i></div>
+                Book an Appointment
+            </a>
             <div class="booking-note">* Please select <strong>Jacklyn</strong> as your nail tech!</div>
         </div>
 
         <!-- Other Links -->
-        <a href="index.html#services" class="link-btn">Service Menu & Pricing</a>
-        <a href="https://www.instagram.com/justthetipsnailco/" class="link-btn" target="_blank">Instagram Portfolio</a>
-        <a href="https://www.facebook.com/profile.php?id=61591643291507" class="link-btn" target="_blank">Facebook Page</a>
-        <a href="index.html" class="link-btn">Visit Our Website</a>
+        <a href="index.html#services" class="link-btn">
+            <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
+            Service Menu & Pricing
+        </a>
+        
+        <a href="https://www.instagram.com/justthetipsnailco/" class="link-btn" target="_blank">
+            <div class="icon-circle"><i class="fa-brands fa-instagram"></i></div>
+            Instagram Portfolio
+        </a>
+        
+        <a href="https://www.facebook.com/profile.php?id=61591643291507" class="link-btn" target="_blank">
+            <div class="icon-circle"><i class="fa-brands fa-facebook-f"></i></div>
+            Facebook Page
+        </a>
+        
+        <a href="index.html" class="link-btn">
+            <div class="icon-circle"><i class="fa-solid fa-house-chimney"></i></div>
+            Visit Our Website
+        </a>
 
         <div class="footer-text">
             &copy; 2026 Just The Tips Nail Co. LLC
