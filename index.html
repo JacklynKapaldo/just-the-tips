@@ -163,12 +163,11 @@
             transition: opacity 0.3s ease;
         }
         
-        /* Interactive placeholder text for future images */
         .gallery-item::before {
             content: "✨";
         }
 
-        /* Booking / Coming Soon Section */
+        /* Booking Section */
         .booking-section {
             background-color: var(--soft-white);
             border: 1px solid var(--foraged-mushroom);
@@ -177,6 +176,28 @@
             text-align: center;
             max-width: 600px;
             margin: 0 auto;
+        }
+        
+        .booking-note {
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--sage-green);
+            margin-top: 0.8rem;
+            font-weight: bold;
+        }
+
+        .map-container {
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--foraged-mushroom);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+            display: block;
         }
 
         .btn {
@@ -200,7 +221,7 @@
 
         /* Social Links */
         .social-links {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             display: flex;
             justify-content: center;
             gap: 1.5rem;
@@ -242,7 +263,10 @@
         <section class="intro">
             <h2>Welcome to your cozy nail retreat.</h2>
             <p>Specializing in healthy natural nails, structured gel overlays, and whimsical, nature-inspired hand-painted art. Let's slow down, enjoy a quiet moment, and grow something beautiful.</p>
-            <p><a href="#booking" class="btn">Join the Waitlist</a></p>
+            <div style="margin-top: 2rem;">
+                <a href="https://home.shortcutssoftware.com/morgantownbeautycollege#/_h/sites/32483/details?servicesId=367" class="btn" target="_blank">Book an Appointment</a>
+                <div class="booking-note">* Please be sure to select <strong>Jacklyn</strong> as your nail tech!</div>
+            </div>
         </section>
 
         <!-- Services Menu -->
@@ -279,13 +303,21 @@
             </div>
         </section>
 
-        <!-- Future Booking / Current Waitlist Section -->
+        <!-- Booking Section -->
         <section id="booking" class="booking-section">
-            <h2>Blossoming Soon</h2>
-            <p>She is currently putting the finishing touches on her nail technician license. In the meantime, you can follow her journey online or keep an eye out here for when the booking calendar officially opens!</p>
+            <h2>Booking Now</h2>
+            <p>I am currently taking clients at Morgantown Beauty College in Downtown Morgantown.</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=276+Walnut+St,+Morgantown,+WV+26505&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div style="margin-top: 1.5rem;">
+                <a href="https://home.shortcutssoftware.com/morgantownbeautycollege#/_h/sites/32483/details?servicesId=367" class="btn" target="_blank">Book an Appointment</a>
+                <div class="booking-note">* Important: Please select <strong>Jacklyn</strong> from the provider list!</div>
+            </div>
             
             <div class="social-links">
-                <!-- Swap # with her actual handles when ready -->
                 <a href="https://www.instagram.com/justthetipsnailco/" class="social-link" target="_blank">🍄 Instagram</a>
                 <a href="https://www.facebook.com/profile.php?id=61591643291507" class="social-link" target="_blank">🌿 Facebook</a>
             </div>
